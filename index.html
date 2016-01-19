@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.11/angular.min.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body>
+   <div data-role="page" id="pageone" ng-app="" ng-controller="cnt">
+     <div data-role="main" class="ui-content" ng-repeat="item in prices">
+        <div class="ui-grid-solo">
+             <h1>РЕМОНТ КОМПЬЮТЕРОВ</h1>
+       </div>
+       <div class="ui-grid-b">
+          <div class="ui-block-a" style="border: 1px solid black;">
+             <img src="img/virusdelete.png"></img>
+             <h3>УДАЛЕНИЕ ВИРУСОВ</h3><h4>{{item.vdel}} РУБ.</h4>
+          </div>
+          <div class="ui-block-b" style="border: 1px solid black;">
+             <img src="img/windows.png"></img>
+             <h3>УСТАНОВКА WINDOWS</h3><h4>{{item.wind}} РУБ.</h4>
+          </div>
+          <div class="ui-block-c" style="border: 1px solid black;">
+             <img src="img/wi-fi.png"></img>
+             <h3>НАСТРОЙКА WI-FI</h3><h4>{{item.wf}} РУБ.</h4>
+          </div>
+       </div>
+       <div class="ui-grid-b" style="border: 1px solid black;">
+          <div class="ui-block-a">
+             <img src="img/enet.png"></img>
+             <h3>НАСТРОЙКА ИНТЕРНЕТА</h3><h4>{{item.e}} РУБ.</h4>
+          </div>
+          <div class="ui-block-b" style="border: 1px solid black;">
+             <img src="img/antivirus.png"></img>
+             <h3>УСТАНОВКА АНТИВИРУСА</h3><h4>{{item.antiv}} РУБ.</h4>
+          </div>
+          <div class="ui-block-c" style="border: 1px solid black;">
+             <img src="img/repair.gif"></img>
+             <h3>РЕМОНТ И МОДЕРНИЗАЦИЯ</h3><h4>{{item.rep}} РУБ.</h4>
+          </div>
+       </div>
+     </div>
+     <a data-ajax="false" style="text-decoration:none; font:13px verdana" href="admin/bd_panel.html">Админ</a>
+   </div>
+</body>
+</html>
