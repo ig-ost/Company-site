@@ -13,7 +13,7 @@
   }
   .ui-block-a, .ui-block-b, .ui-block-c {
     background-color: lightgray;
-    border: 1px solid black;
+    border: 1px solid maroon;
     height: 300px;
     font-weight: bold;
     text-align: center;
